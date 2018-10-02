@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Subsystem uuid="c1b9061d-4410-4766-8785-cdddef3e33f5">
+		<Properties>
+			<Name>УправлениеДоступом</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление доступом</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсистема Управление доступом</v8:content>
+				</v8:item>
+			</Explanation>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ПечатьНепроведенныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ДобавлениеИзменениеЗарплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ЧтениеЗарплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4879a8f2-c41b-4c8e-9291-936e307eca99</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РазделУправлениеДоступом48</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ДобавлениеИзменениеНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РазделУправлениеДоступом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПодсистемаУправлениеДоступом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ОплатаСчетовВнешнимиПользователями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ДобавлениеИзменениеДокументовПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ДобавлениеИзменениеСкладскихДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ЧтениеДокументовПокупателей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ЧтениеСкладскихДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ДобавлениеИзменениеКассовыхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ДобавлениеИзменениеБанковскихДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ЧтениеБанковскихДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ЧтениеКассовыхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПрофилиГруппДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УправлениеДоступом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ДобавлениеИзменениеПеремещенийТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭДВАНС_ЧтениеПеремещенийТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">23b4f737-fe43-4bad-ab9e-d6714d0d624c</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Настройка</Subsystem>
+			<Subsystem>Использование</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

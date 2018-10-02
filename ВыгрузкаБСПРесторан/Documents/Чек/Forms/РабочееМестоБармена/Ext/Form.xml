@@ -1,0 +1,2042 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Столы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Столы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Столы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтолыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="ГруппаСписокНоменклатуры" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список номенклатуры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСписокНоменклатурыРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНоменклатура" id="47">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа номенклатура</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаНоменклатураРасширеннаяПодсказка" id="48"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаВыбранное" id="89">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа выбранное</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа выбранное</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВыбранноеРасширеннаяПодсказка" id="90"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСписокВыбранного" id="83">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа список выбранного</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа список выбранного</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Height>15</Height>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСписокВыбранногоРасширеннаяПодсказка" id="84"/>
+											<ChildItems>
+												<Table name="СписокНоменклатуры" id="8">
+													<DefaultItem>true</DefaultItem>
+													<Height>2</Height>
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<DataPath>Объект.Товары</DataPath>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="СписокНоменклатурыКонтекстноеМеню" id="9"/>
+													<AutoCommandBar name="СписокНоменклатурыКоманднаяПанель" id="10">
+														<Autofill>false</Autofill>
+													</AutoCommandBar>
+													<ExtendedTooltip name="СписокНоменклатурыРасширеннаяПодсказка" id="11"/>
+													<SearchStringAddition name="СписокНоменклатурыСтрокаПоиска" id="12">
+														<AdditionSource>
+															<Item>СписокНоменклатуры</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="СписокНоменклатурыСтрокаПоискаКонтекстноеМеню" id="13"/>
+														<ExtendedTooltip name="СписокНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="14"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="СписокНоменклатурыСостояниеПросмотра" id="15">
+														<AdditionSource>
+															<Item>СписокНоменклатуры</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="СписокНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="16"/>
+														<ExtendedTooltip name="СписокНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="17"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="СписокНоменклатурыУправлениеПоиском" id="18">
+														<AdditionSource>
+															<Item>СписокНоменклатуры</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="СписокНоменклатурыУправлениеПоискомКонтекстноеМеню" id="19"/>
+														<ExtendedTooltip name="СписокНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="20"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<LabelField name="СписокНоменклатурыНомерСтроки" id="167">
+															<DataPath>Объект.Товары.LineNumber</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>1</Width>
+															<ContextMenu name="СписокНоменклатурыНомерСтрокиКонтекстноеМеню" id="168"/>
+															<ExtendedTooltip name="СписокНоменклатурыНомерСтрокиРасширеннаяПодсказка" id="169"/>
+														</LabelField>
+														<InputField name="СписокНоменклатурыНоменклатура" id="170">
+															<DataPath>Объект.Товары.Номенклатура</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="СписокНоменклатурыНоменклатураКонтекстноеМеню" id="171"/>
+															<ExtendedTooltip name="СписокНоменклатурыНоменклатураРасширеннаяПодсказка" id="172"/>
+														</InputField>
+														<InputField name="СписокНоменклатурыКоличество" id="176">
+															<DataPath>Объект.Товары.Количество</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>1</Width>
+															<ContextMenu name="СписокНоменклатурыКоличествоКонтекстноеМеню" id="177"/>
+															<ExtendedTooltip name="СписокНоменклатурыКоличествоРасширеннаяПодсказка" id="178"/>
+														</InputField>
+														<InputField name="СписокНоменклатурыЦена" id="179">
+															<DataPath>Объект.Товары.Цена</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>2</Width>
+															<ContextMenu name="СписокНоменклатурыЦенаКонтекстноеМеню" id="180"/>
+															<ExtendedTooltip name="СписокНоменклатурыЦенаРасширеннаяПодсказка" id="181"/>
+														</InputField>
+														<InputField name="СписокНоменклатурыСумма" id="182">
+															<DataPath>Объект.Товары.Сумма</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>2</Width>
+															<ContextMenu name="СписокНоменклатурыСуммаКонтекстноеМеню" id="183"/>
+															<ExtendedTooltip name="СписокНоменклатурыСуммаРасширеннаяПодсказка" id="184"/>
+														</InputField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</UsualGroup>
+										<Pages name="ГруппаСтраницыКнопок" id="91">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа страницы кнопок</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа страницы кнопок</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаСтраницыКнопокРасширеннаяПодсказка" id="92"/>
+											<ChildItems>
+												<Page name="Группа1СтраницаКнопок" id="93">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Заказ</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа1 страница кнопок</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="Группа1СтраницаКнопокРасширеннаяПодсказка" id="94"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаКнопокРаботаСВыбранным" id="53">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа кнопок работа с выбранным</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа кнопок работа с выбранным</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаКнопокРаботаСВыбраннымРасширеннаяПодсказка" id="54"/>
+															<ChildItems>
+																<UsualGroup name="Группа1Столбец" id="77">
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа1 столбец</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Vertical</Group>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа1СтолбецРасширеннаяПодсказка" id="78"/>
+																	<ChildItems>
+																		<Button name="КнопкаОчистить" id="45">
+																			<Type>UsualButton</Type>
+																			<Width>26</Width>
+																			<MaxWidth>16</MaxWidth>
+																			<Height>3</Height>
+																			<MaxHeight>4</MaxHeight>
+																			<CommandName>Form.Command.КомандаКнопкаОчистить</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Очистить</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаОчиститьРасширеннаяПодсказка" id="46"/>
+																		</Button>
+																		<Button name="КнопкаОплата" id="55">
+																			<Type>UsualButton</Type>
+																			<Width>26</Width>
+																			<MaxWidth>16</MaxWidth>
+																			<Height>3</Height>
+																			<MaxHeight>4</MaxHeight>
+																			<CommandName>Form.Command.КомандаКнопкаОплата</CommandName>
+																			<BackColor>style:ТекстЗапрещеннойЯчейкиЦвет</BackColor>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Оплата</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаОплатаРасширеннаяПодсказка" id="56"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+																<UsualGroup name="Группа3Стобец" id="81">
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа3 стобец</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Vertical</Group>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа3СтобецРасширеннаяПодсказка" id="82"/>
+																	<ChildItems>
+																		<Button name="КнопкаУдалитьСтроку" id="51">
+																			<Type>UsualButton</Type>
+																			<Width>26</Width>
+																			<MaxWidth>16</MaxWidth>
+																			<Height>3</Height>
+																			<MaxHeight>4</MaxHeight>
+																			<CommandName>Form.Command.КомандаКнопкаУдалитьСтроку</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Удалить строку</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаУдалитьСтрокуРасширеннаяПодсказка" id="52"/>
+																		</Button>
+																		<Button name="КнопкаЗакрыть" id="59">
+																			<Type>UsualButton</Type>
+																			<Width>26</Width>
+																			<MaxWidth>16</MaxWidth>
+																			<Height>3</Height>
+																			<MaxHeight>4</MaxHeight>
+																			<CommandName>Form.Command.КомандаКнопкаЗакрыть</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Закрыть</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаЗакрытьРасширеннаяПодсказка" id="60"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+																<UsualGroup name="Группа2Столбец" id="79">
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа2 столбец</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Vertical</Group>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа2СтолбецРасширеннаяПодсказка" id="80"/>
+																	<ChildItems>
+																		<Button name="КнопкаПлюс" id="49">
+																			<Type>UsualButton</Type>
+																			<Representation>Picture</Representation>
+																			<Width>10</Width>
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<MaxWidth>16</MaxWidth>
+																			<Height>3</Height>
+																			<AutoMaxHeight>false</AutoMaxHeight>
+																			<MaxHeight>4</MaxHeight>
+																			<CommandName>Form.Command.КомандаКнопкаПлюс</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Picture>
+																				<xr:Abs>Picture.png</xr:Abs>
+																				<xr:LoadTransparent>false</xr:LoadTransparent>
+																			</Picture>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>+</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаПлюсРасширеннаяПодсказка" id="50"/>
+																		</Button>
+																		<Button name="КнопкаМинус" id="57">
+																			<Type>UsualButton</Type>
+																			<Representation>Picture</Representation>
+																			<Width>10</Width>
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<MaxWidth>16</MaxWidth>
+																			<Height>3</Height>
+																			<AutoMaxHeight>false</AutoMaxHeight>
+																			<MaxHeight>4</MaxHeight>
+																			<CommandName>Form.Command.КомандаКнопкаМинус</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Picture>
+																				<xr:Abs>Picture.png</xr:Abs>
+																				<xr:LoadTransparent>false</xr:LoadTransparent>
+																			</Picture>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>-</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаМинусРасширеннаяПодсказка" id="58"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</Page>
+												<Page name="ГруппаКнопкиОплаты" id="95">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Оплата и скидки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кнопки оплаты</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаКнопкиОплатыРасширеннаяПодсказка" id="96"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаКнопокОплаты" id="97">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа кнопок оплаты</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа кнопок оплаты</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаКнопокОплатыРасширеннаяПодсказка" id="98"/>
+															<ChildItems>
+																<UsualGroup name="ГруппаСтолбецОплата" id="99">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа столбец оплата</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа столбец оплата</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Vertical</Group>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаСтолбецОплатаРасширеннаяПодсказка" id="100"/>
+																	<ChildItems>
+																		<Button name="КнопкаНаличными" id="101">
+																			<Type>UsualButton</Type>
+																			<Width>20</Width>
+																			<Height>2</Height>
+																			<CommandName>Form.Command.КомандаКнопкаНаличными</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Наличный</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаНаличнымиРасширеннаяПодсказка" id="102"/>
+																		</Button>
+																		<Button name="КнопкаБезНал" id="163">
+																			<Type>UsualButton</Type>
+																			<Width>20</Width>
+																			<Height>2</Height>
+																			<CommandName>Form.Command.КомандаКнопкаБезнал</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Безналичный</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаБезНалРасширеннаяПодсказка" id="164"/>
+																		</Button>
+																		<Button name="КнопкаБезОплаты" id="165">
+																			<Type>UsualButton</Type>
+																			<Width>20</Width>
+																			<Height>2</Height>
+																			<CommandName>Form.Command.КомандаКнопкаБезОплаты</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Без оплаты</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаБезОплатыРасширеннаяПодсказка" id="166"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+																<UsualGroup name="Группа1СтолбецСкидки" id="103">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа1 столбец скидки</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа1 столбец скидки</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Vertical</Group>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа1СтолбецСкидкиРасширеннаяПодсказка" id="104"/>
+																	<ChildItems>
+																		<Button name="КнопкаСкидка1" id="107">
+																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Width>20</Width>
+																			<Height>2</Height>
+																			<CommandName>Form.Command.КомандаКнопкаСкидка</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>КнопкаСкидка2</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаСкидка1РасширеннаяПодсказка" id="108"/>
+																		</Button>
+																		<Button name="КнопкаСкидка2" id="282">
+																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Width>20</Width>
+																			<Height>2</Height>
+																			<CommandName>Form.Command.КомандаКнопкаСкидка</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>КнопкаСкидка2</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаСкидка2РасширеннаяПодсказка" id="283"/>
+																		</Button>
+																		<Button name="КнопкаСкидка3" id="284">
+																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Width>20</Width>
+																			<Height>2</Height>
+																			<CommandName>Form.Command.КомандаКнопкаСкидка</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>КнопкаСкидка2</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаСкидка3РасширеннаяПодсказка" id="285"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+																<UsualGroup name="Группа2СтолбецСкидки" id="276">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа1 столбец скидки</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа1 столбец скидки</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Vertical</Group>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа2СтолбецСкидкиРасширеннаяПодсказка" id="277"/>
+																	<ChildItems>
+																		<Button name="КнопкаСкидка4" id="280">
+																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Width>20</Width>
+																			<Height>2</Height>
+																			<CommandName>Form.Command.КомандаКнопкаСкидка</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>КнопкаСкидка5</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаСкидка4РасширеннаяПодсказка" id="281"/>
+																		</Button>
+																		<Button name="КнопкаСкидка5" id="286">
+																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Width>20</Width>
+																			<Height>2</Height>
+																			<CommandName>Form.Command.КомандаКнопкаСкидка</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>КнопкаСкидка2</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаСкидка5РасширеннаяПодсказка" id="287"/>
+																		</Button>
+																		<Button name="КнопкаСкидка6" id="288">
+																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Width>20</Width>
+																			<Height>2</Height>
+																			<CommandName>Form.Command.КомандаКнопкаСкидка</CommandName>
+																			<Font ref="style:LargeTextFont" kind="StyleItem"/>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>КнопкаСкидка2</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="КнопкаСкидка6РасширеннаяПодсказка" id="289"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</UsualGroup>
+								<Pages name="ГруппаМеню" id="111">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа меню</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа меню</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаМенюРасширеннаяПодсказка" id="112"/>
+									<ChildItems>
+										<Page name="Группа1СтраницаМеню" id="113">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>МЕНЮ</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа1 страница меню</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>50</Width>
+											<ExtendedTooltip name="Группа1СтраницаМенюРасширеннаяПодсказка" id="114"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаВпередНазад" id="159">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа2 строка</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа2 строка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВпередНазадРасширеннаяПодсказка" id="160"/>
+													<ChildItems>
+														<Button name="КнопкаНазад" id="151">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкаНазад</CommandName>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Picture>
+																<xr:Abs>Picture.png</xr:Abs>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>НАЗАД</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="КнопкаНазадРасширеннаяПодсказка" id="152"/>
+														</Button>
+														<Button name="КнопкаВверх" id="153">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкаВверх</CommandName>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Picture>
+																<xr:Abs>Picture.png</xr:Abs>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ВВЕРХ</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="КнопкаВверхРасширеннаяПодсказка" id="154"/>
+														</Button>
+														<Button name="КнопкаВперед" id="155">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкаВперед</CommandName>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Picture>
+																<xr:Abs>Picture.png</xr:Abs>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ВПЕРЕД</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="КнопкаВпередРасширеннаяПодсказка" id="156"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа1Строка" id="117">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа1 строка</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа1 строка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа1СтрокаРасширеннаяПодсказка" id="118"/>
+													<ChildItems>
+														<Button name="Кнопка01" id="123">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>01</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка01РасширеннаяПодсказка" id="124"/>
+														</Button>
+														<Button name="Кнопка02" id="125">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>02</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка02РасширеннаяПодсказка" id="126"/>
+														</Button>
+														<Button name="Кнопка03" id="127">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>03</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка03РасширеннаяПодсказка" id="128"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа2Строка" id="119">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа2 строка</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа2 строка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа2СтрокаРасширеннаяПодсказка" id="120"/>
+													<ChildItems>
+														<Button name="Кнопка04" id="129">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>04</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка04РасширеннаяПодсказка" id="130"/>
+														</Button>
+														<Button name="Кнопка05" id="131">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>05</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка05РасширеннаяПодсказка" id="132"/>
+														</Button>
+														<Button name="Кнопка06" id="133">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>06</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка06РасширеннаяПодсказка" id="134"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа3Строка" id="139">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа2 строка</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа2 строка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа3СтрокаРасширеннаяПодсказка" id="140"/>
+													<ChildItems>
+														<Button name="Кнопка07" id="135">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>07</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка07РасширеннаяПодсказка" id="136"/>
+														</Button>
+														<Button name="Кнопка08" id="137">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>08</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка08РасширеннаяПодсказка" id="138"/>
+														</Button>
+														<Button name="Кнопка09" id="141">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>09</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка09РасширеннаяПодсказка" id="142"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа4Строка" id="149">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа2 строка</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа2 строка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа4СтрокаРасширеннаяПодсказка" id="150"/>
+													<ChildItems>
+														<Button name="Кнопка010" id="143">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>10</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка010РасширеннаяПодсказка" id="144"/>
+														</Button>
+														<Button name="Кнопка011" id="145">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>11</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка011РасширеннаяПодсказка" id="146"/>
+														</Button>
+														<Button name="Кнопка012" id="147">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>12</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка012РасширеннаяПодсказка" id="148"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа5Строка" id="185">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа5 строка</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа5 строка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа5СтрокаРасширеннаяПодсказка" id="186"/>
+													<ChildItems>
+														<Button name="Кнопка013" id="187">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>13</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка013РасширеннаяПодсказка" id="188"/>
+														</Button>
+														<Button name="Кнопка014" id="189">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>14</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка014РасширеннаяПодсказка" id="190"/>
+														</Button>
+														<Button name="Кнопка015" id="191">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<TitleHeight>4</TitleHeight>
+															<Width>16</Width>
+															<Height>4</Height>
+															<CommandName>Form.Command.КомандаКнопкиМеню</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>15</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="Кнопка015РасширеннаяПодсказка" id="192"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+										<Page name="Группа2ЦифрыИСуммы" id="193">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ВНЕСЕНИЕ ОПЛАТЫ</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа2 цифры и суммы</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>50</Width>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ExtendedTooltip name="Группа2ЦифрыИСуммыРасширеннаяПодсказка" id="194"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаКОплате" id="198">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа к оплате</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа к оплате</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>true</HorizontalStretch>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<Group>Horizontal</Group>
+													<HorizontalAlign>Right</HorizontalAlign>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКОплатеРасширеннаяПодсказка" id="199"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация1" id="212">
+															<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Итого к оплате:</v8:content>
+																</v8:item>
+															</Title>
+															<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+															<ContextMenu name="Декорация1КонтекстноеМеню" id="213"/>
+															<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="214"/>
+														</LabelDecoration>
+														<LabelField name="ТоварыИтогСумма" id="203">
+															<DataPath>ИтогоКОплате</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HorizontalAlign>Right</HorizontalAlign>
+															<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Font ref="style:NormalTextFont" height="12" bold="true" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+															<ContextMenu name="ТоварыИтогСуммаКонтекстноеМеню" id="204"/>
+															<ExtendedTooltip name="ТоварыИтогСуммаРасширеннаяПодсказка" id="205"/>
+														</LabelField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСуммыПроцентСкидки" id="215">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа суммы процент скидки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа суммы процент скидки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСуммыПроцентСкидкиРасширеннаяПодсказка" id="216"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация2" id="217">
+															<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Процент скидки:</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Декорация2КонтекстноеМеню" id="218"/>
+															<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="219"/>
+														</LabelDecoration>
+														<LabelField name="ПроцентСкидки" id="206">
+															<DataPath>Объект.ПроцентСкидки</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HorizontalAlign>Right</HorizontalAlign>
+															<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Font ref="style:NormalTextFont" height="12" bold="true" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+															<ContextMenu name="ПроцентСкидкиКонтекстноеМеню" id="207"/>
+															<ExtendedTooltip name="ПроцентСкидкиРасширеннаяПодсказка" id="208"/>
+														</LabelField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСуммыСуммаСкидки" id="220">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа суммы сумма скидки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа суммы сумма скидки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСуммыСуммаСкидкиРасширеннаяПодсказка" id="221"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация3" id="222">
+															<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сумма скидки:</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Декорация3КонтекстноеМеню" id="223"/>
+															<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="224"/>
+														</LabelDecoration>
+														<LabelField name="СуммаСкидки" id="209">
+															<DataPath>Объект.СуммаСкидки</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HorizontalAlign>Right</HorizontalAlign>
+															<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Font ref="style:NormalTextFont" height="12" bold="true" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+															<ContextMenu name="СуммаСкидкиКонтекстноеМеню" id="210"/>
+															<ExtendedTooltip name="СуммаСкидкиРасширеннаяПодсказка" id="211"/>
+														</LabelField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаВнесеноДенег" id="257">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа внесено денег</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа внесено денег</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Width>50</Width>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВнесеноДенегРасширеннаяПодсказка" id="258"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация4" id="259">
+															<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Внесено:</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Декорация4КонтекстноеМеню" id="260"/>
+															<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="261"/>
+														</LabelDecoration>
+														<InputField name="СуммаВнесено" id="265">
+															<DataPath>СуммаВнесено</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HorizontalAlign>Right</HorizontalAlign>
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="СуммаВнесеноКонтекстноеМеню" id="266"/>
+															<ExtendedTooltip name="СуммаВнесеноРасширеннаяПодсказка" id="267"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСдача" id="268">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сдача</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сдача</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Width>50</Width>
+													<HorizontalStretch>true</HorizontalStretch>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<HorizontalAlign>Right</HorizontalAlign>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСдачаРасширеннаяПодсказка" id="269"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация5" id="273">
+															<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сдача:</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Декорация5КонтекстноеМеню" id="274"/>
+															<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="275"/>
+														</LabelDecoration>
+														<LabelField name="Сдача" id="270">
+															<DataPath>Сдача</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HorizontalAlign>Right</HorizontalAlign>
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Font ref="style:NormalTextFont" height="12" bold="true" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+															<ContextMenu name="СдачаКонтекстноеМеню" id="271"/>
+															<ExtendedTooltip name="СдачаРасширеннаяПодсказка" id="272"/>
+														</LabelField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаЦифры" id="225">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа цифры</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа цифры</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>true</HorizontalStretch>
+													<Group>Vertical</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаЦифрыРасширеннаяПодсказка" id="226"/>
+													<ChildItems>
+														<UsualGroup name="Группа1СтрокаЦифр" id="227">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа1 строка цифр</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа1 строка цифр</v8:content>
+																</v8:item>
+															</ToolTip>
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<Group>Horizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа1СтрокаЦифрРасширеннаяПодсказка" id="228"/>
+															<ChildItems>
+																<Button name="Цифра1" id="229">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<Width>16</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>4</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<MaxHeight>16</MaxHeight>
+																	<CommandName>Form.Command.КомандаКнопкаЦифры</CommandName>
+																	<Font ref="style:ExtraLargeTextFont" height="10" kind="StyleItem"/>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Цифра1</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Цифра1РасширеннаяПодсказка" id="230"/>
+																</Button>
+																<Button name="Цифра2" id="231">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<Width>16</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>4</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<MaxHeight>16</MaxHeight>
+																	<CommandName>Form.Command.КомандаКнопкаЦифры</CommandName>
+																	<Font ref="style:ExtraLargeTextFont" height="10" kind="StyleItem"/>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Цифра2</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Цифра2РасширеннаяПодсказка" id="232"/>
+																</Button>
+																<Button name="Цифра3" id="233">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<Width>16</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>4</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<MaxHeight>16</MaxHeight>
+																	<CommandName>Form.Command.КомандаКнопкаЦифры</CommandName>
+																	<Font ref="style:ExtraLargeTextFont" height="10" kind="StyleItem"/>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Цифра3</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Цифра3РасширеннаяПодсказка" id="234"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа2СтрокаЦифр" id="235">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа1 строка цифр</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа1 строка цифр</v8:content>
+																</v8:item>
+															</ToolTip>
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<Group>Horizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа2СтрокаЦифрРасширеннаяПодсказка" id="236"/>
+															<ChildItems>
+																<Button name="Цифра4" id="237">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<Width>16</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>4</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<MaxHeight>16</MaxHeight>
+																	<CommandName>Form.Command.КомандаКнопкаЦифры</CommandName>
+																	<Font ref="style:ExtraLargeTextFont" height="10" kind="StyleItem"/>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Цифра4</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Цифра4РасширеннаяПодсказка" id="238"/>
+																</Button>
+																<Button name="Цифра5" id="239">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<Width>16</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>4</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<MaxHeight>16</MaxHeight>
+																	<CommandName>Form.Command.КомандаКнопкаЦифры</CommandName>
+																	<Font ref="style:ExtraLargeTextFont" height="10" kind="StyleItem"/>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Цифра5</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Цифра5РасширеннаяПодсказка" id="240"/>
+																</Button>
+																<Button name="Цифра6" id="241">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<Width>16</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>4</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<MaxHeight>16</MaxHeight>
+																	<CommandName>Form.Command.КомандаКнопкаЦифры</CommandName>
+																	<Font ref="style:ExtraLargeTextFont" height="10" kind="StyleItem"/>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Цифра6</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Цифра6РасширеннаяПодсказка" id="242"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа3СтрокаЦифр" id="243">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа1 строка цифр</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа1 строка цифр</v8:content>
+																</v8:item>
+															</ToolTip>
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<Group>Horizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа3СтрокаЦифрРасширеннаяПодсказка" id="244"/>
+															<ChildItems>
+																<Button name="Цифра7" id="245">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<Width>16</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>4</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<MaxHeight>16</MaxHeight>
+																	<CommandName>Form.Command.КомандаКнопкаЦифры</CommandName>
+																	<Font ref="style:ExtraLargeTextFont" height="10" kind="StyleItem"/>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Цифра7</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Цифра7РасширеннаяПодсказка" id="246"/>
+																</Button>
+																<Button name="Цифра8" id="247">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<Width>16</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>4</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<MaxHeight>16</MaxHeight>
+																	<CommandName>Form.Command.КомандаКнопкаЦифры</CommandName>
+																	<Font ref="style:ExtraLargeTextFont" height="10" kind="StyleItem"/>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Цифра8</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Цифра8РасширеннаяПодсказка" id="248"/>
+																</Button>
+																<Button name="Цифра9" id="249">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<Width>16</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>4</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<MaxHeight>16</MaxHeight>
+																	<CommandName>Form.Command.КомандаКнопкаЦифры</CommandName>
+																	<Font ref="style:ExtraLargeTextFont" height="10" kind="StyleItem"/>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Цифра9</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Цифра9РасширеннаяПодсказка" id="250"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа4СтрокаЦифр" id="251">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа1 строка цифр</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа1 строка цифр</v8:content>
+																</v8:item>
+															</ToolTip>
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<Group>Horizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа4СтрокаЦифрРасширеннаяПодсказка" id="252"/>
+															<ChildItems>
+																<Button name="Цифра0" id="253">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<Width>16</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>4</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<MaxHeight>16</MaxHeight>
+																	<CommandName>Form.Command.КомандаКнопкаЦифры</CommandName>
+																	<Font ref="style:ExtraLargeTextFont" height="10" kind="StyleItem"/>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Цифра0</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Цифра0РасширеннаяПодсказка" id="254"/>
+																</Button>
+																<Button name="Цифра11" id="255">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<Width>33</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>4</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<MaxHeight>16</MaxHeight>
+																	<CommandName>Form.Command.КомандаКнопкаУдалитьСимвол</CommandName>
+																	<Font ref="style:ExtraLargeTextFont" height="10" kind="StyleItem"/>
+																	<Picture>
+																		<xr:Ref>CommonPicture.СтрелкаУдалить</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Цифра11РасширеннаяПодсказка" id="256"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаВсеЧеки" id="161">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа все чеки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа все чеки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВсеЧекиРасширеннаяПодсказка" id="162"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Номенклатура" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Чек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Чек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.Чек</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущаяСтраница" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая страница</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаИзЗначенийДерева" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица из значений дерева</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Код" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоГруппа" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерСтраницы" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер страницы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Объект" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentObject.Чек</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="СуммаВнесено" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма внесено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Сдача" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сдача</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИтогоКОплате" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итого к оплате</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьСкидка" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть скидка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаКнопкаОчистить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка очистить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкаОчистить</Action>
+		</Command>
+		<Command name="КомандаКнопкаПлюс" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка плюс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка плюс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкаПлюс</Action>
+		</Command>
+		<Command name="КомандаКнопкаУдалитьСтроку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка удалить строку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка удалить строку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкаУдалитьСтроку</Action>
+		</Command>
+		<Command name="КомандаКнопкаОплата" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка оплата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка оплата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкаОплата</Action>
+		</Command>
+		<Command name="КомандаКнопкаМинус" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка минус</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка минус</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкаМинус</Action>
+		</Command>
+		<Command name="КомандаКнопкаЗакрыть" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкаЗакрыть</Action>
+		</Command>
+		<Command name="КомандаКнопкаНаличными" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка наличными</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка наличными</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="КомандаКнопкаСкидка" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка скидка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка скидка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкаСкидка</Action>
+		</Command>
+		<Command name="КомандаКнопкиМеню" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопки меню</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопки меню</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкиМеню</Action>
+		</Command>
+		<Command name="КомандаКнопкаНазад" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка назад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка назад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкаНазад</Action>
+		</Command>
+		<Command name="КомандаКнопкаБезнал" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка безнал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка безнал</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="КомандаКнопкаБезОплаты" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка без оплаты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка без оплаты</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="КомандаКнопкаВверх" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка вверх</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка вверх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкаВверх</Action>
+		</Command>
+		<Command name="КомандаКнопкаВперед" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка вперед</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка вперед</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкаВперед</Action>
+		</Command>
+		<Command name="КомандаКнопкаЦифры" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка цифры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка цифры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкаЦифры</Action>
+		</Command>
+		<Command name="КомандаКнопкаУдалитьСимвол" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка удалить символ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кнопка удалить символ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКнопкаУдалитьСимвол</Action>
+		</Command>
+	</Commands>
+</Form>

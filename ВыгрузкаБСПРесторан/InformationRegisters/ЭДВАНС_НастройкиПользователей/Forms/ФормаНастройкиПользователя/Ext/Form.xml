@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройки пользователя</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="29">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаписатьИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="30"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ДеревоНастроек" id="1">
+			<Representation>Tree</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДеревоНастроек</DataPath>
+			<ContextMenu name="ДеревоНастроекКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДеревоНастроекКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоНастроекРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ДеревоНастроекСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ДеревоНастроек</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоНастроекСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ДеревоНастроекСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоНастроекСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ДеревоНастроек</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоНастроекСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ДеревоНастроекСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоНастроекУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ДеревоНастроек</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоНастроекУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДеревоНастроекУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnEditEnd">ДеревоНастроекПриОкончанииРедактирования</Event>
+				<Event name="BeforeRowChange">ДеревоНастроекПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ДеревоНастроекНастройка" id="14">
+					<DataPath>ДеревоНастроек.Настройка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоНастроекНастройкаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ДеревоНастроекНастройкаРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="ДеревоНастроекЗначение" id="17">
+					<DataPath>ДеревоНастроек.Значение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоНастроекЗначениеКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДеревоНастроекЗначениеРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<CheckBoxField name="ДеревоНастроекЭтоГруппа" id="20">
+					<DataPath>ДеревоНастроек.ЭтоГруппа</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоНастроекЭтоГруппаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДеревоНастроекЭтоГруппаРасширеннаяПодсказка" id="22"/>
+				</CheckBoxField>
+				<CheckBoxField name="ДеревоНастроекПредопределенный" id="23">
+					<DataPath>ДеревоНастроек.Предопределенный</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоНастроекПредопределенныйКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДеревоНастроекПредопределенныйРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+				<InputField name="ДеревоНастроекИдентификатор" id="26">
+					<DataPath>ДеревоНастроек.Идентификатор</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоНастроекИдентификаторКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДеревоНастроекИдентификаторРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Пользователь" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторыНастроек" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификаторы настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ДеревоНастроек" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Настройка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ЭДВАНС_НастройкиПользователей</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Значение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.ЭДВАНС_НастройкиПользователей</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ЭтоГруппа" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Предопределенный" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предопределенный</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Идентификатор" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>109</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОбновлятьНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновлять настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗначениеОсновногоСтруктурногоПодразделения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение основного структурного подразделения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗначениеОсновнойОрганизации" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение основной организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОсновнаяОрганизация" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesRef.ЭДВАНС_НастройкиПользователей</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОсновноеПодразделениеОрганизации" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основное подразделение организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesRef.ЭДВАНС_НастройкиПользователей</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОсновноеСтруктурноеПодразделениеОрганизации" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основное структурное подразделение организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesRef.ЭДВАНС_НастройкиПользователей</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаписатьИЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьИЗакрыть</Action>
+		</Command>
+	</Commands>
+</Form>

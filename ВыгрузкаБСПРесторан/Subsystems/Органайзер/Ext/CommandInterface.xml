@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsOrder>
+		<Command name="0:5f5aeb2f-0a62-4d23-8898-de1a7904d715">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.РассылкиОтчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem/>
+		<Subsystem/>
+		<Subsystem/>
+		<Subsystem>Subsystem.Органайзер.Subsystem.ВариантыОтчетов</Subsystem>
+		<Subsystem/>
+		<Subsystem>dcd86ac7-0dfd-4f5f-a15d-577ca08a4c71</Subsystem>
+		<Subsystem/>
+		<Subsystem/>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

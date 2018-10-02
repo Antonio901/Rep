@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.4">
+	<Item id="82d4b043-7935-4839-af89-16ef8fb6e1a7">
+		<Name>ОсновныеНастройкиДляПодстановки</Name>
+		<Code>000000002</Code>
+		<Description>Основные настройки для подстановки</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="6dd84278-654d-492d-b6df-b382f1edf9ca">
+				<Name>ИспользоватьГдеТо</Name>
+				<Code>000000003</Code>
+				<Description>Использовать где то</Description>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="6ec0c551-2bc8-4153-9f99-473abd8661ac">
+		<Name>ОсновнаяОрганизация</Name>
+		<Code>000000001</Code>
+		<Description>Основная организация</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="758b2ca3-39dc-468f-8ac1-a44ead00bd44">
+		<Name>ОсновноеПодразделениеОрганизации</Name>
+		<Code>000000004</Code>
+		<Description>Основное подразделение организации</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Подразделения</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="205151be-627a-4bf2-b2c5-a5ad6658872f">
+		<Name>ОсновноеСтруктурноеПодразделениеОрганизации</Name>
+		<Code>000000005</Code>
+		<Description>Основное структурное подразделение организации</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Подразделения</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

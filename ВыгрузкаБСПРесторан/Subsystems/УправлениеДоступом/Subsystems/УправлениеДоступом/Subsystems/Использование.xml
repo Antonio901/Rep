@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Subsystem uuid="7a114cde-3a5e-4791-b1a7-722c1bf743cd">
+		<Properties>
+			<Name>Использование</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использование</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">4a7aa9ca-5e44-4ffa-bebc-26e2685e48f0</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">6fe9a018-6c73-4489-8479-6a5a68271baf</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">07fafa71-238b-4db7-b3e2-888cac6c62b8</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">44947459-75aa-48e8-b40f-907177c2afb3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">6bc726e3-2f94-498d-9584-c1a54fda5b27</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">c136e638-f8b3-4942-a8de-2bd90e899d95</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Файлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">91f93a17-db95-4b52-bad0-d1dba7dfec9a</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4eee25b1-2da6-459b-953b-4c8d519c9bce</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">c0e210f8-2586-4bbf-8523-b5a9bab3a785</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.БанковскиеСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыДоступаНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4e1437bf-948b-4b05-9341-a2df3f301d7f</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Кассы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КассыККМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">151a60c1-249a-4d57-aea4-f3b0e4685973</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Контрагенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МестаХранения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НоменклатураПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">5eab8a1b-070f-4dcf-bdcc-a259c62c3693</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">2918fa78-4e45-46e3-8bd4-b499aa87af78</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">280dbcad-7b86-403c-a1dd-af521658bcac</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВерсииФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВнешниеПользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыВнешнихПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополнительныеОтчетыИОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">263bcd20-9878-48d4-aac4-b371ec49d8d6</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗначенияСвойствОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗначенияСвойствОбъектовИерархия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Организации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПапкиФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">0abacb0a-ce00-474e-8aec-35685c51ddef</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">da59378e-0a97-4cff-977b-cc51967068ee</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">b8931f98-c1d7-4e9b-be43-065064e7ba95</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">53191842-ea05-4491-84d7-071cd201992d</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">6b2340d7-687f-43a3-8eb8-8ddb86712466</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">04055821-03ce-4049-af2c-8670c80517f6</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">77bdd30f-4933-4bda-9c7a-b0a097da0910</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">e29da7eb-5fcc-4067-82ca-ae24a1fb314a</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">c89ef88a-05d7-4e90-afa9-589326cc8a0e</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">01914e00-3164-4c89-8c95-14b72786f20b</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">2b63b94b-a7a3-4864-98d3-433b28e56984</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">5657286b-114b-41de-ab7d-45d0f0d95e2d</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">53c4c3b2-9257-4d02-8df8-6b55fe9abdae</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">67c1269a-79e6-44d9-9254-671c50fb3974</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">457578ab-dfe2-4419-8d8a-64283b341f42</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">f50fcf2b-90bb-4d73-9fda-f4575e7682fa</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">8f2b8a8e-4cd3-45e3-89ae-1cc4bd0ff30a</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">7da57c89-af2c-445a-96f7-39250f70306f</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РаботникиОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДанныеБизнесПроцессов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДополнительныеСведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИсполнителиЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НапоминанияПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиВариантовОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиУчетныхЗаписейЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПользовательскиеНастройкиДоступаКОбработкам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПредметыПапкиВзаимодействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоставыГруппПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьХранимыеФайлыВерсий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Task.ЗадачаИсполнителя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">dad11c2e-08fc-4a6b-8829-8be6c64c15fc</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">fd9d80b5-940c-4f9b-9374-81fbc5c535a3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДоговорыКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РеестрСкладскихДокументов</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
